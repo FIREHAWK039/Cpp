@@ -367,9 +367,65 @@ using namespace std;
 //     }
 // }
 
+// int main()
+// {
+
+//     int n;
+//     cin >> n;
+
+//     int row = 1;
+
+//     while (row <= n)
+//     {
+
+//         int space = n - row;
+
+//         while (space)
+//         {
+//             cout << " ";
+//             space = space - 1;
+//         }
+
+//         int col = 1;
+//         while (col <= row)
+//         {
+//             cout << "*";
+//             col = col + 1;
+//         }
+//         cout << endl;
+//         row = row + 1;
+//     }
+// }
+
+// int main()
+// {
+
+//     int n;
+//     cin >> n;
+
+//     int row = 1;
+
+//     while (row <= n)
+//     {
+//         int col = 1;
+//         int xyz = n - row + 1;
+//         while (col <= row)
+//         {
+//             cout << xyz <<"*";
+
+//         }
+
+//         cout << endl;
+//         row = row + 1;
+//     }
+// }
+
+
+
+
+
 int main()
 {
-
     int n;
     cin >> n;
 
@@ -378,19 +434,28 @@ int main()
     while (row <= n)
     {
 
+        // Print karo space (1st triangle)
         int space = n - row;
-
         while (space)
         {
-            cout << " ";    
+            cout << " ";
             space = space - 1;
         }
 
-        int col = 1;
-        while (col <= row)
+        // print 2nd triangle
+        int j = 1;
+        while (j <= row)
         {
-            cout << "*";
-            col = col + 1;
+            cout << j;
+            j = j + 1;
+        }
+        // print 3rd triangle
+
+        int start = row - 1;
+        while (start)
+        {
+            cout << start;
+            start = start - 1;
         }
         cout << endl;
         row = row + 1;
